@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/musiclevels_FtvxN5l8.ogg-5c67dea1ef0a28e5957027f16fe2f385.oggstr"
+
+[deps]
+
+source_file="res://Musics/musiclevels_FtvxN5l8.ogg"
+dest_files=[ "res://.import/musiclevels_FtvxN5l8.ogg-5c67dea1ef0a28e5957027f16fe2f385.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

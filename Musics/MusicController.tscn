@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Musics/musiclevels_FtvxN5l8.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Musics/MusicController.gd" type="Script" id=2]
+
+[node name="MusicController" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="MusicLevel" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
