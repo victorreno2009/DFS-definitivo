@@ -9,7 +9,7 @@ var current_level_name
 
 
 
-var id = 11;
+var id = 6;
 
 func _ready():
 

@@ -4,7 +4,7 @@
 [ext_resource path="res://Doors/Door3.tscn" type="PackedScene" id=2]
 [ext_resource path="res://TelaPreta.png" type="Texture" id=3]
 [ext_resource path="res://Maps/Passagem3.gd" type="Script" id=4]
-[ext_resource path="res://Bosses/Boss.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Bosses/Fogo.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Maps/mapC.gd" type="Script" id=6]
 [ext_resource path="res://Maps/Passagem3 & 2.gd" type="Script" id=7]
 [ext_resource path="res://Atlas Sprites/trees-removebg-preview.png" type="Texture" id=9]
@@ -235,12 +235,13 @@ position = Vector2( -1173.46, 1079.12 )
 rotation = 1.57581
 shape = SubResource( 8 )
 
-[node name="Boss" parent="." instance=ExtResource( 5 )]
-position = Vector2( 605.732, 385.176 )
-scale = Vector2( 1.5, 1.5 )
+[node name="Fogo" parent="." instance=ExtResource( 5 )]
+position = Vector2( 265.983, 131.536 )
 
-[node name="Boss2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 354.276, 144.215 )
-scale = Vector2( 1.5, 1.5 )
+[node name="Fogo3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 384.035, 202.386 )
+
+[node name="Fogo4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 708.419, 162.681 )
 [connection signal="body_entered" from="Passagem3" to="Passagem3" method="_on_Passagem3_body_entered"]
 [connection signal="body_entered" from="Passagem3 & 2" to="Passagem3 & 2" method="_on_Passagem3__2_body_entered"]

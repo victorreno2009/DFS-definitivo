@@ -1,7 +1,7 @@
 extends TileMap
 
 
-var id = 5;
+var id = 4;
 
 func _ready():
 	Global.set_map(id)

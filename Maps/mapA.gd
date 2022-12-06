@@ -9,10 +9,10 @@ var current_level_name
 
 
 
-var id = 2;
+
+var id = 0;
 
 func _ready():
-	MusicController.play_music()
 	Global.set_map(id)
 	print ("Mapa: ", Global.get_map())
 		

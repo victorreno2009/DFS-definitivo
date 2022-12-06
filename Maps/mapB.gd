@@ -4,7 +4,7 @@ var Map = preload("res://Minimap.tscn")
 
 
 
-var id = 6;
+var id = 1;
 
 func _ready():
 	process_priority = -100

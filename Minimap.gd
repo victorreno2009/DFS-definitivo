@@ -7,25 +7,25 @@ var map = Global.map
 
 
 func blink():
-	if map == 2:
+	if map == 0:
 		$LevelA/Blink.visible = true
-	if map == 6:
-		$LevelB/Blink.visible = true
-	if map == 9:
-		$LevelC/Blink.visible = true
-	if map == 4:
-		$LevelD/Blink.visible = true
-	if map == 5:
-		$LevelE/Blink.visible = true
-	if map == 10:
-		$LevelF/Blink.visible = true
-	if map == 11:
-		$LevelG/Blink.visible = true
-	if map == 3:
-		$LevelH/Blink.visible = true
-	if map == 7:
-		$LevelI/Blink.visible = true
 	if map == 1:
+		$LevelB/Blink.visible = true
+	if map == 2:
+		$LevelC/Blink.visible = true
+	if map == 3:
+		$LevelD/Blink.visible = true
+	if map == 4:
+		$LevelE/Blink.visible = true
+	if map == 5:
+		$LevelF/Blink.visible = true
+	if map == 6:
+		$LevelG/Blink.visible = true
+	if map == 7:
+		$LevelH/Blink.visible = true
+	if map == 8:
+		$LevelI/Blink.visible = true
+	if map == 9:
 		$LevelJ/Blink.visible = true
 		
 func _ready():

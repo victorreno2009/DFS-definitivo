@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Minimap.gd" type="Script" id=1]
-[ext_resource path="res://WhatsApp Image 2022-12-01 at 14.10.19.jpeg" type="Texture" id=2]
+[ext_resource path="res://NOVO MINI MAPA.png" type="Texture" id=2]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Blink"
@@ -20,37 +20,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ) ]
-}
-
-[sub_resource type="Animation" id=21]
-resource_name = "Blink"
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
-}
-
-[sub_resource type="Animation" id=22]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
@@ -97,7 +66,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-resource_name = "Blink"
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
@@ -113,6 +81,36 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
@@ -317,8 +315,8 @@ tracks/0/keys = {
 pause_mode = 2
 margin_left = 1.0
 margin_top = 1.0
-margin_right = 1023.0
-margin_bottom = 599.0
+margin_right = 1281.0
+margin_bottom = 1190.0
 color = Color( 0, 0, 0, 0.392157 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -326,8 +324,8 @@ __meta__ = {
 }
 
 [node name="Map2" type="Sprite" parent="."]
-position = Vector2( 504.432, 288.198 )
-scale = Vector2( 0.488281, 0.27418 )
+position = Vector2( 510.742, 299.623 )
+scale = Vector2( 0.9, 0.6 )
 texture = ExtResource( 2 )
 
 [node name="LevelA" type="Node2D" parent="."]
@@ -335,10 +333,10 @@ texture = ExtResource( 2 )
 [node name="Blink" type="ColorRect" parent="LevelA"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.158411 )
-margin_left = 489.0
-margin_top = 197.0
-margin_right = 589.0
-margin_bottom = 253.0
+margin_left = 492.0
+margin_top = 202.0
+margin_right = 587.0
+margin_bottom = 265.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -365,10 +363,10 @@ __meta__ = {
 [node name="Blink" type="ColorRect" parent="LevelD"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.158411 )
-margin_left = 376.0
-margin_top = 325.646
-margin_right = 477.0
-margin_bottom = 382.646
+margin_left = 389.0
+margin_top = 343.0
+margin_right = 484.0
+margin_bottom = 407.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -376,8 +374,8 @@ __meta__ = {
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LevelD/Blink"]
 autoplay = "Blink"
-anims/Blink = SubResource( 21 )
-anims/RESET = SubResource( 22 )
+anims/Blink = SubResource( 3 )
+anims/RESET = SubResource( 4 )
 
 [node name="Hide" type="ColorRect" parent="LevelD"]
 visible = false
@@ -395,16 +393,16 @@ __meta__ = {
 [node name="Blink" type="ColorRect" parent="LevelB"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.622087 )
-margin_left = 493.0
-margin_top = 263.0
-margin_right = 593.0
-margin_bottom = 319.0
+margin_left = 497.0
+margin_top = 275.0
+margin_right = 590.0
+margin_bottom = 338.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LevelB/Blink"]
 autoplay = "Blink"
-anims/Blink = SubResource( 3 )
-anims/RESET = SubResource( 4 )
+anims/Blink = SubResource( 5 )
+anims/RESET = SubResource( 6 )
 
 [node name="Hide" type="ColorRect" parent="LevelB"]
 visible = false
@@ -419,16 +417,16 @@ color = Color( 0.858824, 0.662745, 0.329412, 1 )
 [node name="Blink" type="ColorRect" parent="LevelC"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.61479 )
-margin_left = 609.0
-margin_top = 263.0
-margin_right = 710.0
-margin_bottom = 319.0
+margin_left = 603.0
+margin_top = 275.0
+margin_right = 698.0
+margin_bottom = 338.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LevelC/Blink"]
 autoplay = "Blink"
-anims/Blink = SubResource( 5 )
-anims/RESET = SubResource( 6 )
+anims/Blink = SubResource( 7 )
+anims/RESET = SubResource( 8 )
 
 [node name="Hide" type="ColorRect" parent="LevelC"]
 visible = false
@@ -446,10 +444,10 @@ __meta__ = {
 [node name="Blink" type="ColorRect" parent="LevelE"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.125462 )
-margin_left = 492.0
-margin_top = 326.0
-margin_right = 593.0
-margin_bottom = 382.0
+margin_left = 496.0
+margin_top = 344.0
+margin_right = 591.0
+margin_bottom = 407.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LevelE/Blink"]
@@ -470,10 +468,10 @@ color = Color( 0.858824, 0.662745, 0.329412, 1 )
 [node name="Blink" type="ColorRect" parent="LevelF"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0 )
-margin_left = 260.0
-margin_top = 326.0
-margin_right = 361.0
-margin_bottom = 383.0
+margin_left = 282.0
+margin_top = 344.0
+margin_right = 377.0
+margin_bottom = 407.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -497,10 +495,10 @@ color = Color( 0.858824, 0.662745, 0.329412, 1 )
 [node name="Blink" type="ColorRect" parent="LevelG"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0 )
-margin_left = 376.0
-margin_top = 390.0
-margin_right = 477.0
-margin_bottom = 447.0
+margin_left = 389.0
+margin_top = 413.0
+margin_right = 484.0
+margin_bottom = 476.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LevelG/Blink"]
@@ -521,10 +519,10 @@ color = Color( 0.858824, 0.662745, 0.329412, 1 )
 [node name="Blink" type="ColorRect" parent="LevelH"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0 )
-margin_left = 488.0
+margin_left = 492.0
 margin_top = 131.0
-margin_right = 589.0
-margin_bottom = 188.0
+margin_right = 587.0
+margin_bottom = 194.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LevelH/Blink"]
@@ -545,10 +543,10 @@ color = Color( 0.858824, 0.662745, 0.329412, 1 )
 [node name="Blink" type="ColorRect" parent="LevelI"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0 )
-margin_left = 609.0
-margin_top = 197.0
-margin_right = 710.0
-margin_bottom = 254.0
+margin_left = 604.0
+margin_top = 202.0
+margin_right = 698.0
+margin_bottom = 265.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LevelI/Blink"]
@@ -569,10 +567,10 @@ color = Color( 0.858824, 0.662745, 0.329412, 1 )
 [node name="Blink" type="ColorRect" parent="LevelJ"]
 visible = false
 self_modulate = Color( 1, 1, 1, 0 )
-margin_left = 376.0
-margin_top = 263.0
-margin_right = 477.0
-margin_bottom = 320.0
+margin_left = 390.0
+margin_top = 275.0
+margin_right = 483.0
+margin_bottom = 338.0
 color = Color( 0.454902, 0.843137, 0.392157, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LevelJ/Blink"]

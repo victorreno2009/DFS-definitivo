@@ -1,7 +1,7 @@
 extends Node2D
 
 
-var id = 7;
+var id = 8;
 
 func _ready():
 	Global.set_map(id)
